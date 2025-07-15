@@ -2,7 +2,7 @@ Request Engine
 
 A modular Python engine for sending HTTPS requests through rotating proxies with TLS fingerprinting, structured logging, and Prometheus-based observability.
 
-🚀 Features
+Features
 
 Rotating Proxies — Avoid IP bans using configurable proxy rotation
 
@@ -16,7 +16,7 @@ Structured Logging — Log request/response events in JSONL format
 
 Prometheus Metrics — Built-in metrics exposed via HTTP
 
-📁 Project Structure
+Project Structure
 
 Request_Engine/
 ├── config/
@@ -34,7 +34,7 @@ Request_Engine/
 ├── main.py                    # CLI entrypoint
 └── README.md                  # This file
 
-⚙️ Setup
+Setup
 
 Prerequisites
 
@@ -46,7 +46,7 @@ Install Dependencies
 
 pip install -r requirements.txt
 
-🛠️ Configuration
+Configuration
 
 Edit config/config.yaml:
 
@@ -62,7 +62,7 @@ tls_profiles:
   - Chrome_108
   - Firefox_102
 
-🧪 Run the Engine
+Run the Engine
 
 python main.py
 
@@ -71,7 +71,7 @@ Sample output:
 https://httpbin.org/get → 200 → SUCCESS
 https://example.com → 403 → BLOCKED
 
-📊 Observability
+Observability
 
 View Metrics
 
@@ -91,7 +91,7 @@ Logs are written to logs/logs.jsonl in JSONL format:
 
 {"timestamp": "2025-07-15T09:12:23.364Z", "event": "request_sent", "url": "https://httpbin.org/get"}
 
-🧩 Extending the Engine
+Extending the Engine
 
 Task
 
@@ -113,7 +113,7 @@ Integrate GUI
 
 Hook into main.py using Gradio/Streamlit
 
-🔒 Security Notes
+Security Notes
 
 No credentials are hardcoded
 
@@ -121,11 +121,11 @@ Proxy auth is configurable via YAML
 
 TLS spoofing is header-based only (safe fallback)
 
-👤 Author
+Author
 
 Built by Harsh Nair — for performance testing, scraping, and observability use cases.
 
-📜 License
+License
 
 MIT License
 
