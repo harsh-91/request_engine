@@ -1,0 +1,13 @@
+targets:
+  - https://httpbin.org/get
+  - https://example.com
+  - http://proxy.scrapeops.io:5353  # Example public proxy
+
+
+proxies:
+  - http://127.0.0.1:8080
+  - http://127.0.0.2:8080
+
+tls_profiles:
+  - Chrome_108
+  - Firefox_102
